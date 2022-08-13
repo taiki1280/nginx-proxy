@@ -8,7 +8,8 @@ services:
       - "80:80"
     volumes:
       - ./nginx/html:/app
-      - ./nginx/conf.d/taiki-proxy.conf:/etc/nginx/conf.d/taiki-proxy.conf
+      # - ./nginx/conf.d/taiki-proxy.conf:/etc/nginx/conf.d/taiki-proxy.conf
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
       # TODO とりあえず証明書を手動アップロード。後々自動化する
       - ./ssl:/etc/ssl/
 
