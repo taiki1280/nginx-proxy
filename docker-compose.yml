@@ -1,0 +1,17 @@
+version: "3"
+services:
+  nginx-proxy:
+    image: nginx:latest
+    container_name: "nginx-proxy"
+    ports:
+      - "444:444"
+      - "80:80"
+    volumes:
+      - ./nginx/html:/app
+      - ./nginx/conf.d/taiki-proxy.conf:/etc/nginx/conf.d/taiki-proxy.conf
+      # TODO とりあえず証明書を手動アップロード。後々自動化する
+      - ./ssl:/etc/ssl/
+
+networks:
+  default:
+    name: sample-network
