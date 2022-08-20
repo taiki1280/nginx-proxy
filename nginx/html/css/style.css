@@ -1,0 +1,61 @@
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #6cb8ff, #fff66c, #ffa36c);
+    padding: 5%;
+    animation: bggradient 5s ease infinite;
+
+    @keyframes bggradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+* {
+    text-shadow: white 1px 0 5px;
+}
+
+h1 {
+    margin: 5vh 0;
+    font-size: 2.2em;
+}
+
+h2 {
+    margin: 2.5vh 0;
+    font-size: 2em;
+}
+
+h3 {
+    margin: 2.5vh 0;
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    padding: 0.2em;
+}
+
+.taiki-specialty {
+    color: #00ccff;
+}
+
+.taiki-global {
+    color: #282c34;
+}
+
+.taiki-portfolio {
+    color: #00bd7e;
+}
+
+.taiki-karaoke {
+    color: navy;
+}
