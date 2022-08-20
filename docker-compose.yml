@@ -4,7 +4,9 @@ services:
     image: nginx:latest
     container_name: "nginx-proxy"
     ports:
-      - "444:444"
+      # とりあえず、444ポートでアクセスされた場合、80ポートのものを表示しておく。ゆくゆくは消そうとしている。
+      # （443でアクセスされた場合に証明書を通過してここの80ポートの内容を表示することを前提としている）
+      - "444:80"
       - "80:80"
     volumes:
       - ./nginx/html:/app
@@ -12,6 +14,7 @@ services:
       - ./nginx/conf.d/:/etc/nginx/conf.d/
       # TODO とりあえず証明書を手動アップロード。後々自動化する
       - ./ssl:/etc/ssl/
+    restart: always
 
 networks:
   default:
