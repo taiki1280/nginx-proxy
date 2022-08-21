@@ -2,7 +2,7 @@ body {
     height: 100vh;
     box-sizing: border-box;
     background: linear-gradient(45deg, #6cb8ff, #fff66c, #ffa36c);
-    padding: 5%;
+    padding: 0 5%;
     animation: bggradient 5s ease infinite;
 
     @keyframes bggradient {
@@ -20,22 +20,35 @@ body {
     }
 }
 
-* {
-    text-shadow: white 1px 0 5px;
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 h1 {
-    margin: 5vh 0;
     font-size: 2.2em;
+    text-shadow:
+        0 0 2.5px #fff,
+        0 0 2.5px #fff,
+        0 0 2.5px #fff,
+        0 0 5px #fff;
 }
 
 h2 {
-    margin: 2.5vh 0;
     font-size: 2em;
 }
 
 h3 {
-    margin: 2.5vh 0;
     font-size: 1.5em;
 }
 
@@ -44,18 +57,70 @@ p {
     padding: 0.2em;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2.5vmin;
+    border-radius: 2.5vmin;
+    background-color: rgba(255, 255, 255, 20%);
+    text-shadow:
+        0 0 2.5px #fff,
+        0 0 2.5px #fff,
+        0 0 2.5px #fff,
+        0 0 5px #fff;
+}
+
+.content * {
+    display: flex;
+}
+
+.content.taiki-specialty {
+    background-color: #00ccff33;
+}
+
 .taiki-specialty {
-    color: #00ccff;
+    color: #fff;
+    text-shadow:
+        0 0 2.5px #00ccff,
+        0 0 2.5px #00ccff,
+        0 0 2.5px #00ccff,
+        0 0 5px #00ccff;
+}
+
+.content.taiki-global {
+    background-color: #282c3433;
 }
 
 .taiki-global {
-    color: #282c34;
+    color: white;
+    text-shadow: 0 0 2.5px #282c34,
+        0 0 2.5px #282c34,
+        0 0 2.5px #282c34,
+        0 0 5px #282c34;
+}
+
+.content.taiki-portfolio {
+    background-color: #00bd7e33;
 }
 
 .taiki-portfolio {
-    color: #00bd7e;
+    color: white;
+    text-shadow: 0 0 2.5px #00bd7e,
+        0 0 2.5px #00bd7e,
+        0 0 2.5px #00bd7e,
+        0 0 5px #00bd7e;
+}
+
+.content.taiki-karaoke {
+    background-color: rgba(0, 0, 128, 20%);
 }
 
 .taiki-karaoke {
-    color: navy;
+    color: white;
+    text-shadow: 0 0 2.5px navy,
+        0 0 2.5px navy,
+        0 0 2.5px navy,
+        0 0 5px navy;
+
 }
