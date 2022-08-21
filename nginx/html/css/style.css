@@ -113,14 +113,13 @@ p {
 }
 
 .content.taiki-karaoke {
-    background-color: rgba(0, 0, 128, 20%);
+    background-color: rgba(17, 24, 39, 20%);
 }
 
 .taiki-karaoke {
     color: white;
-    text-shadow: 0 0 2.5px navy,
-        0 0 2.5px navy,
-        0 0 2.5px navy,
-        0 0 5px navy;
-
+    text-shadow: 0 0 2.5px rgb(17, 24, 39),
+        0 0 2.5px rgb(17, 24, 39),
+        0 0 2.5px rgb(17, 24, 39),
+        0 0 5px rgb(17, 24, 39);
 }
