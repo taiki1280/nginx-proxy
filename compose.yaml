@@ -1,0 +1,15 @@
+services:
+  nginx-proxy:
+    image: nginx:latest
+    container_name: "nginx-proxy"
+    ports:
+      # 443でアクセスされた場合に証明書を通過してここの80ポートの内容を表示することを前提としている
+      - "80:80"
+    volumes:
+      - ./nginx/html:/app
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    restart: always
+
+networks:
+  default:
+    name: sample-network
