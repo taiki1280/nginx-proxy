@@ -12,4 +12,4 @@ services:
 
 networks:
   default:
-    name: sample-network
+    name: taiki-network

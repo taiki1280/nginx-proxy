@@ -75,11 +75,11 @@ p {
     display: flex;
 }
 
-.content.taiki-specialty {
+.content.specialty {
     background-color: #00ccff33;
 }
 
-.taiki-specialty {
+.specialty {
     color: #fff;
     text-shadow:
         0 0 2.5px #00ccff,
@@ -88,11 +88,11 @@ p {
         0 0 5px #00ccff;
 }
 
-.content.taiki-global {
+.content.global {
     background-color: #282c3433;
 }
 
-.taiki-global {
+.global {
     color: white;
     text-shadow: 0 0 2.5px #282c34,
         0 0 2.5px #282c34,
@@ -100,11 +100,11 @@ p {
         0 0 5px #282c34;
 }
 
-.content.taiki-portfolio {
+.content.portfolio {
     background-color: #00bd7e33;
 }
 
-.taiki-portfolio {
+.portfolio {
     color: white;
     text-shadow: 0 0 2.5px #00bd7e,
         0 0 2.5px #00bd7e,
@@ -112,11 +112,11 @@ p {
         0 0 5px #00bd7e;
 }
 
-.content.taiki-karaoke {
+.content.karaoke {
     background-color: rgba(17, 24, 39, 20%);
 }
 
-.taiki-karaoke {
+.karaoke {
     color: white;
     text-shadow: 0 0 2.5px rgb(17, 24, 39),
         0 0 2.5px rgb(17, 24, 39),
