@@ -1,5 +1,5 @@
 services:
-  nginx-proxy:
+  app:
     image: nginx:latest
     container_name: "nginx-proxy"
     ports:
