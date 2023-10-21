@@ -8,6 +8,7 @@ services:
     volumes:
       - ./nginx/html:/app
       - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - ../karaoke/api/static/:/karaoke/api/static/
     restart: always
 
 networks:
